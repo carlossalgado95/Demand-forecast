@@ -65,12 +65,12 @@ Os dados foram divididos em conjuntos de treino e teste. Após a normalização 
   - **Root Mean Squared Error (RMSE):** 1757.5
   - **R² (Coeficiente de Determinação):** 0.955
 
-  -   **69198**
+  **69198**
   - **Mean Absolute Error (MAE):** 69198
   - **Root Mean Squared Error (RMSE):** 1379.97
   - **R² (Coeficiente de Determinação):** 0.961
 
-  -   **152982**
+  **152982**
   - **Mean Absolute Error (MAE):** 862.60
   - **Root Mean Squared Error (RMSE):** 1897.5
   - **R² (Coeficiente de Determinação):** 0.716
