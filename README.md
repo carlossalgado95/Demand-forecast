@@ -74,7 +74,13 @@ Os dados foram divididos em conjuntos de treino e teste. Após a normalização 
   - **Mean Absolute Error (MAE):** 862.60
   - **Root Mean Squared Error (RMSE):** 1897.5
   - **R² (Coeficiente de Determinação):** 0.716
+  - 
+### Interpretação das Métricas
 
+- **MAE (Erro Médio Absoluto):** Mede a média dos erros absolutos entre as previsões e os valores reais. Valores menores indicam previsões mais precisas.
+- **RMSE (Raiz do Erro Quadrático Médio):** Penaliza erros grandes mais fortemente do que o MAE. Valores menores indicam melhor desempenho do modelo.
+- **R² (Coeficiente de Determinação):** Mede a proporção da variabilidade dos dados que é explicada pelo modelo. Valores mais próximos de 1 indicam melhor ajuste do modelo.
+- 
 ### 5. **Insights**
   - **Precisão do Modelo:** O modelo Random Forest Regressor apresentou um R² de 0.91, indicando uma forte capacidade de explicação da variabilidade dos dados de vendas. Isso sugere que o modelo é eficaz em capturar as tendências e padrões das vendas.
   - **Erro de Predição:** O MAE e RMSE são relativamente baixos, o que demonstra que as previsões do modelo estão bastante próximas dos valores reais. Embora haja algumas variações, o modelo oferece previsões confiáveis.
