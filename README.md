@@ -59,12 +59,28 @@ Os dados foram divididos em conjuntos de treino e teste. Após a normalização 
   - **Root Mean Squared Error (RMSE):** 233.88
   - **R² (Coeficiente de Determinação):** 0.91
 
-### 4. **Insights**
+### 4. **Resultados por SKU mais vendidas**
+  **177396**
+  - **Mean Absolute Error (MAE):** 896.74
+  - **Root Mean Squared Error (RMSE):** 1757.5
+  - **R² (Coeficiente de Determinação):** 0.955
+
+  -   **69198**
+  - **Mean Absolute Error (MAE):** 69198
+  - **Root Mean Squared Error (RMSE):** 1379.97
+  - **R² (Coeficiente de Determinação):** 0.961
+
+  -   **152982**
+  - **Mean Absolute Error (MAE):** 862.60
+  - **Root Mean Squared Error (RMSE):** 1897.5
+  - **R² (Coeficiente de Determinação):** 0.716
+
+### 5. **Insights**
   - **Precisão do Modelo:** O modelo Random Forest Regressor apresentou um R² de 0.91, indicando uma forte capacidade de explicação da variabilidade dos dados de vendas. Isso sugere que o modelo é eficaz em capturar as tendências e padrões das vendas.
   - **Erro de Predição:** O MAE e RMSE são relativamente baixos, o que demonstra que as previsões do modelo estão bastante próximas dos valores reais. Embora haja algumas variações, o modelo oferece previsões confiáveis.
   - **Aplicabilidade:** Com uma boa performance de previsão, o modelo pode ser utilizado para planejar estratégias de marketing, ajustar os níveis de estoque e tomar decisões baseadas em dados para otimizar as operações e maximizar as receitas.
 
-### 5. **Conclusão**
+### 6. **Conclusão**
 
 O modelo de previsão de vendas desenvolvido neste projeto proporciona uma ferramenta valiosa para análise e planejamento, ajudando a prever as vendas com precisão e apoiar decisões estratégicas baseadas em dados históricos.
 
