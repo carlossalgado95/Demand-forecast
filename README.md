@@ -1,6 +1,6 @@
 # Projeto Boticário
 
-# Análise Exploratória Final para Previsão de Vendas
+# Análise Exploratória para Previsão de Vendas
 
 Este repositório contém o notebook de análise exploratória final do projeto de previsão de vendas. O objetivo desta análise é compreender a variabilidade das vendas e identificar padrões significativos que podem orientar estratégias de marketing e otimização de recursos.
 
