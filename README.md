@@ -49,3 +49,32 @@ O objetivo desta análise é fornecer uma visão abrangente dos dados de vendas,
 
 A análise explora a variabilidade e o impacto dos dados de vendas em diferentes categorias e regiões, fornecendo insights para estratégias de vendas mais eficazes.
 
+# Previsão de Vendas
+
+### 1. **Objetivo**
+
+O objetivo deste projeto é prever as vendas futuras com base em dados históricos e variáveis relevantes. Utilizamos técnicas avançadas de aprendizado de máquina para fornecer previsões precisas e auxiliar na tomada de decisões estratégicas.
+
+### 2. **Processo**
+
+
+Os dados foram divididos em conjuntos de treino e teste. Após a normalização dos dados com StandardScaler, aplicamos o modelo Random Forest Regressor. Ajustamos o modelo usando Grid Search para encontrar os melhores hiperparâmetros, garantindo a melhor performance possível.
+
+### 3. **Resultados**
+
+   - **Mean Absolute Error (MAE):** 52.88
+   - **Root Mean Squared Error (RMSE):** 233.88
+   - **R² (Coeficiente de Determinação):** 0.91
+
+### 4. **Insights**
+
+    Precisão do Modelo: O modelo Random Forest Regressor apresentou um R² de 0.91, indicando uma forte capacidade de explicação da variabilidade dos dados de vendas. Isso sugere que o modelo é eficaz em capturar as tendências e padrões das vendas.
+
+    Erro de Predição: O MAE e RMSE são relativamente baixos, o que demonstra que as previsões do modelo estão bastante próximas dos valores reais. Embora haja algumas variações, o modelo oferece previsões confiáveis.
+
+    Aplicabilidade: Com uma boa performance de previsão, o modelo pode ser utilizado para planejar estratégias de marketing, ajustar os níveis de estoque e tomar decisões baseadas em dados para otimizar as operações e maximizar as receitas.
+
+### 5. **Conclusão**
+
+O modelo de previsão de vendas desenvolvido neste projeto proporciona uma ferramenta valiosa para análise e planejamento, ajudando a prever as vendas com precisão e apoiar decisões estratégicas baseadas em dados históricos.
+
