@@ -41,14 +41,7 @@ Este repositório contém o notebook de análise exploratória final do projeto 
 - **Investigue Grandes Transações:** Analisar transações de alto valor pode revelar oportunidades para replicar ou expandir essas receitas.
 - **Ajuste Estratégias:** Personalize estratégias de marketing e vendas com base nas diferenças de receita média entre canais e regiões.
 - **Gerencie Variabilidade:** Monitorar e entender a alta variabilidade pode ajudar a otimizar a gestão de receitas e melhorar previsões.
-
-## Objetivo
-
-O objetivo desta análise é fornecer uma visão abrangente dos dados de vendas, identificar padrões e tendências significativas e oferecer recomendações para melhorar o planejamento de demanda e a eficácia das campanhas de marketing.
-
-## Nota
-
-A análise explora a variabilidade e o impacto dos dados de vendas em diferentes categorias e regiões, fornecendo insights para estratégias de vendas mais eficazes.
+- 
 
 # Previsão de Vendas
 
