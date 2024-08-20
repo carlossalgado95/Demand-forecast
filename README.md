@@ -68,11 +68,11 @@ Os dados foram divididos em conjuntos de treino e teste. Após a normalização 
 
 ### 4. **Insights**
 
-    Precisão do Modelo: O modelo Random Forest Regressor apresentou um R² de 0.91, indicando uma forte capacidade de explicação da variabilidade dos dados de vendas. Isso sugere que o modelo é eficaz em capturar as tendências e padrões das vendas.
+    -** Precisão do Modelo:** O modelo Random Forest Regressor apresentou um R² de 0.91, indicando uma forte capacidade de explicação da variabilidade dos dados de vendas. Isso sugere que o modelo é eficaz em capturar as tendências e padrões das vendas.
 
-    Erro de Predição: O MAE e RMSE são relativamente baixos, o que demonstra que as previsões do modelo estão bastante próximas dos valores reais. Embora haja algumas variações, o modelo oferece previsões confiáveis.
+    -** Erro de Predição:** O MAE e RMSE são relativamente baixos, o que demonstra que as previsões do modelo estão bastante próximas dos valores reais. Embora haja algumas variações, o modelo oferece previsões confiáveis.
 
-    Aplicabilidade: Com uma boa performance de previsão, o modelo pode ser utilizado para planejar estratégias de marketing, ajustar os níveis de estoque e tomar decisões baseadas em dados para otimizar as operações e maximizar as receitas.
+    -** Aplicabilidade:** Com uma boa performance de previsão, o modelo pode ser utilizado para planejar estratégias de marketing, ajustar os níveis de estoque e tomar decisões baseadas em dados para otimizar as operações e maximizar as receitas.
 
 ### 5. **Conclusão**
 
