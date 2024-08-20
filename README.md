@@ -83,4 +83,5 @@ Os dados foram divididos em conjuntos de treino e teste. Após a normalização 
 ### 6. **Conclusão**
 
 O modelo de previsão de vendas desenvolvido neste projeto proporciona uma ferramenta valiosa para análise e planejamento, ajudando a prever as vendas com precisão e apoiar decisões estratégicas baseadas em dados históricos.
+
 O modelo geral tem melhor desempenho porque utiliza um conjunto de dados maior e mais variado, o que permite uma melhor generalização dos padrões de vendas. Modelos individuais por produto enfrentam dificuldades devido à menor quantidade de dados e maior variabilidade, resultando em previsões menos precisas.
