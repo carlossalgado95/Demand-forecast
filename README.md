@@ -1,4 +1,4 @@
-# Boticário Project
+# Demand Forecast Project
 
 # Exploratory Analysis for Sales Forecasting
 
