@@ -1,93 +1,87 @@
-# Projeto Boticário
+# Boticário Project
 
-# Análise Exploratória para Previsão de Vendas
+# Exploratory Analysis for Sales Forecasting
 
-Este repositório contém o notebook de análise exploratória final do projeto de previsão de vendas. O objetivo desta análise é compreender a variabilidade das vendas e identificar padrões significativos que podem orientar estratégias de marketing e otimização de recursos.
+This repository contains the final exploratory analysis notebook for the sales forecasting project. The goal of this analysis is to understand sales variability and identify significant patterns that can guide marketing strategies and resource optimization.
 
-## Resumo da Análise
+## Analysis Summary
 
-### 1. **Preparação dos Dados**
+### 1. **Data Preparation**
 
-- **Tratamento de Dados Faltantes:** Foi identificada uma grande proporção de valores nulos na variável `VL_RECEITA_BRUTA`, o que impacta a modelagem e a previsão de vendas.
-- **Formato de Data:** A coluna de data possui um formato inadequado (`YYYYWW`), dificultando a análise temporal e a previsão de vendas. A conversão dessa data para um formato padrão de `datetime` é essencial para uma análise precisa.
+- **Missing Data Treatment:** A large proportion of null values ​​were identified in the `VL_RECEITA_BRUTA` variable, which impacts modeling and sales forecasting.
+- **Date Format:** The date column has an inadequate format (`YYYYWW`), making temporal analysis and sales forecasting difficult. Converting this date to a standard `datetime` format is essential for accurate analysis.
 
-### 2. **Análise Descritiva**
+### 2. **Descriptive Analysis**
 
-- **Distribuição das Variáveis:**
-  - **`FLG_DATA`:** Indicador binário de data comemorativa, com cerca de 29% das observações associadas a datas especiais.
-  - **`COD_CANAL`:** Dois canais distintos de vendas, que possibilitam a comparação entre vendas online e físicas.
-  - **`DES_CATEGORIA_MATERIAL`:** Seis categorias de materiais, permitindo a análise de desempenho por tipo de produto.
-  - **`COD_REGIAO`:** Duas regiões de venda, facilitando a comparação de desempenho regional.
-  - **`COD_MATERIAL`:** 2252 materiais distintos, representando a diversidade de produtos.
-  - **`VL_PRECO`:** Dois valores de preço, indicando uma estrutura de preços simples.
+- **Distribution of Variables:**
+- **`FLG_DATA`:** Binary indicator of commemorative date, with approximately 29% of observations associated with special dates.
+- **`COD_CANAL`:** Two distinct sales channels, which allow comparison between online and physical sales.
+- **`DES_CATEGORIA_MATERIAL`:** Six categories of materials, allowing analysis of performance by type of product.
+- **`COD_REGIAO`:** Two sales regions, facilitating comparison of regional performance.
+- **`COD_MATERIAL`:** 2252 distinct materials, representing the diversity of products.
+- **`VL_PRECO`:** Two price values, indicating a simple price structure.
 
-### 3. **Visualização e Análise**
+### 3. **Visualization and Analysis**
 
-- **Correlação entre Variáveis:** 
-  - **`FLG_CAMPANHA_MKT_B`** tem uma correlação significativa (0.91) com **`QT_VENDA_BRUTO`**.
-  - **`QT_VENDA_BRUTO`** apresenta uma forte correlação (0.91) com **`VL_RECEITA_LIQUIDA`**.
-  - **`FLG_CAMPANHA_MKT_A`** e **`FLG_CAMPANHA_MKT_C`** têm uma correlação significativa (0.69).
-  - **`FLG_CAMPANHA_MKT_A`** mostra uma correlação perfeita (1.00) com **`VL_RECEITA_LIQUIDA`**.
+- **Correlation between Variables:**
+- **`FLG_CAMPANHA_MKT_B`** has a significant correlation (0.91) with **`QT_VENDA_BRUTO`**.
+- **`QT_VENDA_BRUTO`** has a strong correlation (0.91) with **`VL_REVENUE_NET`**.
+- **`FLG_CAMPANHA_MKT_A`** and **`FLG_CAMPANHA_MKT_C`** have a significant correlation (0.69).
+- **`FLG_CAMPANHA_MKT_A`** shows a perfect correlation (1.00) with **`VL_REVENUE_NET`**.
 
-### 4. **Insights e Recomendações**
+### 4. **Insights and Recommendations**
 
-- **Alta Variabilidade:** Alguns grupos, como **`COD_CANAL = 0`** e **`COD_REGIAO = 0`**, mostram alta variabilidade na receita bruta, o que pode indicar grandes transações ou clientes de alto valor.
-- **Diferença de Receita Média:** O grupo **`COD_CANAL = 0`** e **`COD_REGIAO = 0`** tem a maior média de receita bruta, sugerindo que essas áreas podem ser mais lucrativas.
-- **Valores Máximos Altos:** Certos grupos têm valores máximos elevados, indicando grandes transações que impactam a receita total.
-- **Desvio Padrão Elevado:** Altos desvios padrões indicam variações significativas na receita bruta, refletindo diferentes padrões de transação entre canais e regiões.
+- **High Variability:** Some groups, such as **`COD_CHANNEL = 0`** and **`COD_REGIAO = 0`**, show high variability in gross revenue, which may indicate large transactions or high-value customers.
 
-### 5. **Conclusão e Ações Recomendadas**
+- **Average Revenue Difference:** The **`COD_CHANNEL = 0`** and **`COD_REGIAO = 0`** group has the highest average gross revenue, suggesting that these areas may be more profitable.
 
-- **Investigue Grandes Transações:** Analisar transações de alto valor pode revelar oportunidades para replicar ou expandir essas receitas.
-- **Ajuste Estratégias:** Personalize estratégias de marketing e vendas com base nas diferenças de receita média entre canais e regiões.
-- **Gerencie Variabilidade:** Monitorar e entender a alta variabilidade pode ajudar a otimizar a gestão de receitas e melhorar previsões.
-- 
+- **High Maximum Values:** Certain groups have high maximum values, indicating large transactions that impact total revenue.
 
-# Previsão de Vendas
+- **High Standard Deviation:** High standard deviations indicate significant variations in gross revenue, reflecting different transaction patterns across channels and regions.
 
-### 1. **Objetivo**
+### 5. **Conclusion and Recommended Actions**
 
-O objetivo deste projeto é prever as vendas futuras com base em dados históricos e variáveis relevantes. Utilizamos técnicas avançadas de aprendizado de máquina para fornecer previsões precisas e auxiliar na tomada de decisões estratégicas.
+- **Investigate Large Transactions:** Analyzing high-value transactions can reveal opportunities to replicate or expand those revenues.
+- **Adjust Strategies:** Tailor marketing and sales strategies based on average revenue differences across channels and regions.
+- **Manage Variability:** Monitoring and understanding high variability can help optimize revenue management and improve forecasting.
+-
 
-### 2. **Processo**
+# Sales Forecasting
 
+### 1. **Objective**
 
-Os dados foram divididos em conjuntos de treino e teste. Após a normalização dos dados com StandardScaler, aplicamos o modelo Random Forest Regressor. Ajustamos o modelo usando Grid Search para encontrar os melhores hiperparâmetros, garantindo a melhor performance possível.
+The objective of this project is to predict future sales based on historical data and relevant variables. We use advanced machine learning techniques to provide accurate forecasts and assist in strategic decision making.
 
-### 3. **Resultados**
-  - **Mean Absolute Error (MAE):** 52.88
-  - **Root Mean Squared Error (RMSE):** 233.88
-  - **R² (Coeficiente de Determinação):** 0.91
+### 2. **Process**
 
-### 4. **Resultados por SKU mais vendidas**
-  **177396**
-  - **Mean Absolute Error (MAE):** 896.74
-  - **Root Mean Squared Error (RMSE):** 1757.5
-  - **R² (Coeficiente de Determinação):** 0.955
+The data was divided into training and testing sets. After normalizing the data with StandardScaler, we applied the Random Forest Regressor model. We tuned the model using Grid Search to find the best hyperparameters, ensuring the best possible performance.
 
-  **69198**
-  - **Mean Absolute Error (MAE):** 69198
-  - **Root Mean Squared Error (RMSE):** 1379.97
-  - **R² (Coeficiente de Determinação):** 0.961
+### 3. **Results**
+- **Mean Absolute Error (MAE):** 52.88
+- **Root Mean Squared Error (RMSE):** 233.88
+- **R² (Coefficient of Determination):** 0.91
 
-  **152982**
-  - **Mean Absolute Error (MAE):** 862.60
-  - **Root Mean Squared Error (RMSE):** 1897.5
-  - **R² (Coeficiente de Determinação):** 0.716
-  - 
-### Interpretação das Métricas
+### 4. **Results by best-selling SKU**
+**177396**
+- **Mean Absolute Error (MAE):** 896.74
+- **Root Mean Squared Error (RMSE):** 1757.5
+- **R² (Coefficient of Determination):** 0.955
 
-- **MAE (Erro Médio Absoluto):** Mede a média dos erros absolutos entre as previsões e os valores reais. Valores menores indicam previsões mais precisas.
-- **RMSE (Raiz do Erro Quadrático Médio):** Penaliza erros grandes mais fortemente do que o MAE. Valores menores indicam melhor desempenho do modelo.
-- **R² (Coeficiente de Determinação):** Mede a proporção da variabilidade dos dados que é explicada pelo modelo. Valores mais próximos de 1 indicam melhor ajuste do modelo.
-- 
+**69198**
+- **Mean Absolute Error (MAE):** 69198
+- **Root Mean Squared Error (RMSE):** 1379.97
+- **R² (Coefficient of Determination):** 0.961
+
+**152982**
+- **Mean Absolute Error (MAE):** 862.60
+- **Root Mean Squared Error (RMSE):** 1897.5
+- **R² (Coefficient of Determination):** 0.716
+-
+### Interpreting the Metrics
+
+- **MAE (Mean Absolute Error):** Measures the average of the absolute errors between the predictions and the actual values. Smaller values ​​indicate more accurate predictions.
+- **RMSE (Root Mean Squared Error):** Penalizes large errors more heavily than MAE. Smaller values ​​indicate better model performance.
+- **R² (Coefficient of Determination):** Measures the proportion of data variability that is explained by the model. Values ​​closer to 1 indicate better model fit.
+-
 ### 5. **Insights**
-  - **Precisão do Modelo:** O modelo Random Forest Regressor apresentou um R² de 0.91, indicando uma forte capacidade de explicação da variabilidade dos dados de vendas. Isso sugere que o modelo é eficaz em capturar as tendências e padrões das vendas.
-  - **Erro de Predição:** O MAE e RMSE são relativamente baixos, o que demonstra que as previsões do modelo estão bastante próximas dos valores reais. Embora haja algumas variações, o modelo oferece previsões confiáveis.
-  - **Aplicabilidade:** Com uma boa performance de previsão, o modelo pode ser utilizado para planejar estratégias de marketing, ajustar os níveis de estoque e tomar decisões baseadas em dados para otimizar as operações e maximizar as receitas.
-
-### 6. **Conclusão**
-
-O modelo de previsão de vendas desenvolvido neste projeto proporciona uma ferramenta valiosa para análise e planejamento, ajudando a prever as vendas com precisão e apoiar decisões estratégicas baseadas em dados históricos.
-
-O modelo geral tem melhor desempenho porque utiliza um conjunto de dados maior e mais variado, o que permite uma melhor generalização dos padrões de vendas. Modelos individuais por produto enfrentam dificuldades devido à menor quantidade de dados e maior variabilidade, resultando em previsões menos precisas.
+- **Model Accuracy:** The Random Forest Regressor model had an R² of 0.91, indicating
